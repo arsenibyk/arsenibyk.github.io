@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Overpass+Mono');
+
+body {
+	background: #0b090e;
+}
+#Clock {
+	position: absolute;
+	top: 50%;
+	left: 25%;
+	margin: -125px 0 0 -125px;
+	font-family: 'Overpass Mono', monospace;
+	font-size: 200px;
+	color: #def1ff;
+	text-shadow: 0 0 50px #00008B;
+	border: double #def1ff;
+	box-shadow: 0 0 50px #00008B;
+}
