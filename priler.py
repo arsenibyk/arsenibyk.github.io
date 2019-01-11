@@ -4,9 +4,9 @@ import telebot
 from time import time
 
 
-bot = telebot.TeleBot("744804002:AAFnStkdLO8lN9Qu7pXddc9N5ZTLUBUsxpU")
+bot = telebot.TeleBot("Ваш токен")
 
-GROUP_ID = -1001473450441
+GROUP_ID = IDшник вашей группы
 
 @bot.message_handler(commands=["start"])
 def start(message):
@@ -37,13 +37,13 @@ def get_language(lang_code):
 def handler_text(message):
     if message.text == "Да":
         bot.send_message(message.chat.id, "Пизда.")
-    elif message.text == "@priler":
+    elif message.text == "@чей-то username":
         bot.send_message(message.chat.id, "Заебал.")
-    elif message.text == "@prilerbot":
+    elif message.text == "@username бота":
         bot.send_message(message.chat.id, "Пидоры на месте.")
-    elif message.text == "@arsenibyk":
+    elif message.text == "@ваш username":
         bot.send_message(message.chat.id, "Ждём всемогущего...")
-        bot.send_message(480725445, "Вас зовут!")
+        bot.send_message(Ваш персональный IDшник, "Вас зовут!")
 
 if __name__ == "__main__":
     bot.polling(none_stop=True)
